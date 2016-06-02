@@ -1,0 +1,12 @@
+---
+declared-services:
+  swift-node-file-upload:
+    label: Object-Storage
+    plan: Free
+applications:
+- name: node-file-upload-swift-ahadik
+  command: node server.js
+  path: .
+  memory: 1G
+  services:
+  - tabulous-storage
